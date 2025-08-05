@@ -1,0 +1,20 @@
+-- Création de la table
+CREATE TABLE utilisateurs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    mot_de_passe VARCHAR(255) NOT NULL,
+    date_inscription DATETIME DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+-- Insertion de données
+INSERT INTO utilisateurs (nom, email, mot_de_passe) VALUES
+('Alice', 'alice@example.com', 'motdepasse123'),
+('Bob', 'bob@example.com', 'motdepasse456');
+
+-- Affichage
+SELECT * FROM utilisateurs;
+
+SHOW TABLES;
+
+DESCRIBE utilisate
